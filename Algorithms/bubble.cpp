@@ -18,18 +18,15 @@ void print_array(int array[], int n){
 
 }
 
-void output(int array[], int n)
-{
-    bubbleSort(array, n);
-}
+
 int main(){
     int n;
     cin >> n;
     int array[n];
     for(int i=0; i<n ; i++)
     cin >> array[i];
-    output(array, n);
-    //bubbleSort(array, n);
+    //output(array, n);
+    bubbleSort(array, n);
     print_array(array, n);
     return 0;
 }
